@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Build and output folders
+dist/
+build/
+out/
+target/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# VS Code settings
+.vscode/
+
+# Eclipse / Java project files
+.classpath
+.project
+.settings/
+bin/
+
+# Environment and secret config files
+.env
