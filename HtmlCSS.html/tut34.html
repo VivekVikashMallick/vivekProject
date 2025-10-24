@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe & Animation.</title>
+    </head>
+    <style>
+        .container{
+            background-color: cadetblue;
+        }
+        .box{
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            /* { 
+                animation-name: Vivek1;
+             animation-duration: 2s; 
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+            animation-iteration-count: infinite; */
+
+            /* animation-fill-mode: forwards; */
+            /*  In this it start animation and than stop at the end after given iteration.  */
+            /* animation-fill-mode: alternate; */
+            /* In this it start animation and than stop at the begining after given iteration. */
+
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* Animation-timing function works to control the speed of the animation,if we select ease-in than it start with slow and gradually it get fast,while in ease-out it start with fast and than slow.
+            In ease-in-out it start with slow than fast and than again slow. */
+
+            /* animation-delay: 2s; */
+            /* It delay the starting time of the animaton.}
+             */
+
+            /* animation-direction: reverse; */
+            
+            /* We can summarise the above property in one line by. */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Vivek1 5s ease-in 2s 3 forwards;
+
+        }
+        @keyframes Vivek1 {
+            
+            0%{
+                top:250px;
+                left:0px;
+            }
+            20%{
+                top:250px;
+                left:250px;
+            }
+            50%{
+                top:0px;
+                left:250px;
+            }
+            100%{
+                top:0px;
+                left:0px;
+            }
+        }
+        @keyframes Vivek {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1200px;
+            }
+            
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is my Box.
+        </div>
+    </div>
+</body>
+</html>

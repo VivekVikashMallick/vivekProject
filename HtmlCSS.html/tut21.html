@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more design</title>
+    <style>
+        .container{
+            border: 4px dashed rgb(236, 4, 35);
+            border-radius: 8px;
+            background-color: beige;
+            margin: 28px auto;
+            padding: 32px 18px ;
+            text-align: justify;
+            width: 1000px;
+        }
+         .btn{ 
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: rgb(15, 228, 192);
+            padding: 4px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a:hover
+        {
+            color: rgb(230, 22, 184);
+            border: 2px solid rgba(150, 14, 150, 0.575);
+           
+        }
+        
+        button:hover{
+            color: deeppink;
+            border: 2px solid rgba(96, 14, 150, 0.575);
+        }
+        a:visited{
+            background-color: white;
+        }
+        a:active{
+            background-color: cyan;
+        }
+        button:active{
+            background-color: rgb(247, 0, 255);
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container" #cont1>
+    <h2>This is my heading.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi repellat nulla similique quisquam soluta laudantium laboriosam quam exercitationem debitis possimus dolorum quidem totam accusantium quae nam, animi nobis aspernatur ex. Expedita suscipit, maiores pariatur eius unde quis nihil libero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, qui officiis. Libero aperiam repellendus itaque obcaecati dolorum nostrum corporis veniam.</p>
+    <a href="https://www.google.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+</div>
+    
+</body>
+</html>

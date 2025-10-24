@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After pseudo selectors.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            background-color: black;
+            color: beige;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            
+        }
+        /* Important Topic of web-development. */
+        header::before{
+            background: url(https://images.unsplash.com/photo-1652406267886-429fed650354?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80) no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 25px 15px;
+            color: bisque;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 255px;
+            justify-content: center;
+            margin: -32px 267px;
+        }
+        section::after{
+            content: "This content comes after section. ";
+        }
+        h1{
+            font-size: 3em;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact us.</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to my Coding World.</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis molestias adipisci non eaque consectetur vel, maiores fugit iste nobis, a maxime. Hic nam alias voluptatum! Dolorem, quisquam consectetur! Omnis ipsum eveniet neque beatae aut necessitatibus sed sit nobis consequatur.
+
+        </section>
+</body>
+</html>

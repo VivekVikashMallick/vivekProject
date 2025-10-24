@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 12px 25px;
+            margin: 5px 15px;
+            /* border: 2px solid red; */
+            background-color: aliceblue;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 5px 8px bisque; */
+            /* box-shadow: -5px -8px bisque; */
+            /* box-shadow: 10px 12px 20px blue; */
+            /* box-shadow: offset-x offset-y color blur-radius ; */
+            /* box-shadow: 10px 12px 20px 7px blue; */
+            /* box-shadow: offset-x offset-y color blur-radius spread-radius ; */
+            box-shadow: 10px 12px 20px 7px rgba(87,214,145,0.5);
+            /* rgba = red green blue alpha(it represent the intensity(how dark the color is) of colour used.) */
+            /* box-shadow: inset 20px 25px rgba(12, 218, 56, 0.897); */
+            box-shadow:  7px 4px rgba(12, 218, 56) , 14px 10px red;
+        }
+        .card h2{
+            /* text-shadow: 2px 2px #8fc737; */
+            text-shadow: 9px 8px 3px #8fc737;
+            /* This can create a shadow effect on x,y&z axis. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Web Development Course.</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eos minima tempora ea numquam! Nostrum, numquam nulla sed a, atque aspernatur cum alias inventore quo libero eaque corporis vel ad eius magnam odio qui nisi? Veritatis asperiores dignissimos officiis ipsam.
+        </div>
+        <div class="card" id="card2">
+            <h2>Comprehensive course on Python.</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis, sed quae vitae dolorum animi. Commodi libero doloremque mollitia debitis, maiores, reiciendis pariatur nulla iure laborum explicabo atque sequi nihil alias unde temporibus? Cumque quas aut tempore! Voluptatum, voluptas quisquam?
+        </div>
+        <div class="card" id="card3">
+            <h2>Fullstack Java Developer.</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid sequi, eius repellat sunt at magni expedita nam facilis voluptatibus repudiandae modi temporibus in ex tempora quos, saepe veniam natus id nostrum necessitatibus alias placeat architecto? Consequuntur mollitia sit earum.
+        </div>
+    </div>
+</body>
+</html>

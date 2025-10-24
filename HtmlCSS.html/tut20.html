@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float in CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body
+        {
+            font-family:   'The Nautigal', cursive;
+        }
+        .container
+        {
+            
+            background-color: #d3bea3;
+            width: 1200px;
+            height: 700px;
+            border-radius: 14px;
+            border-style: dashed;
+            border-color: blueviolet;
+            margin: auto;
+        }
+
+        .item
+        {
+            font-size: small;
+            
+            border: 4px dotted rgb(155 53 4);
+            margin: 12px 3px;
+            padding: 13px 15px;
+            background-color: rgb(205, 164, 243);
+        }
+
+        #Fruits
+        {
+            background-color: #1ad5d5;
+            float:left;
+            width: 48%;
+        }
+
+        #Vegetable
+        {
+            background-color: #f5e2cc;
+            float: right;
+            width: 48%;
+        }
+
+        #Flowers
+        {
+            clear: both;
+            /* clear:left means it clear all the obstacle from left side,follwed by right for right side and both for both side. */
+            background-color: #d2e51b;
+            float:left ;
+            width: 98%;
+        }
+
+        #Dairy
+        {
+            clear: both;
+            background-color: darkorange;
+            float: left;
+            width: 98%;
+        }
+        p,h3{
+            text-align: justify;
+            /* you can add text-align:left,right,center,justify */
+        }
+        h1{
+            margin: 25px auto;
+            width: 550px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store.</h1>
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="Fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aspernatur! Possimus veritatis quos earum sequi molestias totam error ab architecto explicabo doloremque numquam, nihil quisquam voluptatum? Neque maxime sapiente suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dicta soluta autem animi eaque ratione impedit repudiandae architecto, molestiae assumenda aut debitis quibusdam harum possimus sequi perferendis totam ipsum minus.</p>
+        </div>
+        <div id="Vegetable" class="item">
+            <h3>Vegetable</h3>
+            <p id="Vegetablepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aspernatur! Possimus veritatis quos earum sequi molestias totam error ab architecto explicabo doloremque numquam, nihil quisquam voluptatum? Neque maxime sapiente suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis veniam sapiente commodi pariatur sit exercitationem a, soluta facilis ratione repellendus expedita, accusantium dolorem laborum esse. Deserunt minus architecto repellendus.</p>
+        </div>
+        <div id="Flowers" class="item">
+            <h3>Flowers</h3>
+            <p id="Flowerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aspernatur! Possimus veritatis quos earum sequi molestias totam error ab architecto explicabo doloremque numquam, nihil quisquam voluptatum? Neque maxime sapiente suscipit?</p>
+        </div>
+        <div id="Dairy" class="item">
+            <h3>Dairy</h3>
+            <p id="Dairypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aspernatur! Possimus veritatis quos earum sequi molestias totam error ab architecto explicabo doloremque numquam, nihil quisquam voluptatum? Neque maxime sapiente suscipit?</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

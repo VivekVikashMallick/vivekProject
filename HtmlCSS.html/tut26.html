@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial.</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 500px;
+            border: 8px solid rgb(161, 138, 112);
+            background-color: #151814;
+            display: flex;
+             /* flex-direction: row; (Default value of flex-direction  is row) */ 
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            /* flex-wrap: wrap; (Default value of flex-wrap  is no-wrap) */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: wrap row-reverse; (This is a shorthaned for flex-direction & flex-wrap) */
+
+            /* Justify-content will justify the content in horizontal directon. */
+            /* justify-content: center;  */
+            /* justify-content: space-between;( space between two boxes are equal) */
+            /* justify-content: space-around; (space arround a box , i.e left & right of the box are equal)*/
+            /* justify-content: space-evenly;(space between two every box and total width divided equally) */
+
+            /* align-content will align the content in vertical directon. */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid red;
+            background-color: peru;
+
+        }
+        /* flex properties for flex item. */
+        #item-1{
+            order: 1;
+            /* order use to give the priority to that item so to go on the last.
+            or, we can say Higher the order later it shows in the container. */
+            flex-shrink: 5;
+        }
+        #item-2{
+            flex-grow: 3;
+            /* It is used to grow that item more than other,depends on their value.If we put 3 their than it grow 3 times more than other,while if we give them 5 than it grows 5 times more. */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+        }
+        #item-4{
+            flex-grow: 5;
+            flex-basis: 120px;
+            /* when flex-direction is set to row, flex-basis:will control width.
+            when flex-direction is set to column,flex-basis:will control height. */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>This is Flexbox tutorials.</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <!-- <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+    
+</body>
+</html>
