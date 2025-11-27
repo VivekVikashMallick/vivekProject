@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>/* Global Reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Container */
+.styled-form {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #e0cdcd;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.styled-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Labels */
+.styled-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="password"],
+.styled-form input[type="tel"],
+.styled-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.styled-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Radio Groups */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Arrange label and select in one line */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Label spacing and text */
+.form-row label {
+  width: 100px; /* fixed label width for alignment */
+  margin-right: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Dropdown style */
+.form-row select {
+  flex: 1; /* take remaining width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect */
+.form-row select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+</style>
+</head>
+<body>
+    <form class="styled-form">
+  <h2>Registration Form</h2>
+  
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+  <label for="dob">Date of Birth</label>
+  <input type="date" id="dob" name="dob" required>
+ <div class="form-row">
+
+  <label for="gender">Gender</label>
+  <select id="gender" required>
+    <option value="" disabled selected>Select Gender</option>
+    <option value="male">Male</option> 
+    <option value="female">Female</option> 
+    <option value="other">Other</option> 
+  </select>
+  </div>
+  
+  <div>
+  <fieldset class="plan-group">
+    <legend>Subscription Plan</legend>
+    <label><input type="radio" name="plan" value="basic" required> Basic</label>
+    <label><input type="radio" name="plan" value="premium"> Premium</label>
+    <label><input type="radio" name="plan" value="pro"> Pro</label>
+  </fieldset>
+  </div>
+
+  <label class="checkbox">
+    <input type="checkbox" required> I agree to the terms and conditions
+  </label>
+
+  <button type="submit">Register</button>
+  
+</form>
+
+
+
+    
+</body>
+</html>
